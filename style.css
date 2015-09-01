@@ -1,0 +1,94 @@
+* {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+}
+
+body {
+	font:arial;
+}
+
+#header {
+  width:80%;
+  margin: 0 auto 15px auto;
+  padding: 10px;
+  display: table;
+}
+
+#header > div {
+  vertical-align: top;
+  display: table-cell;
+}
+
+.col3 { width: 25%; }
+.col4 { width: 33.333333333%; }
+.col5 { width: 41.666666667%; }
+.col6 { width: 50%; }
+.col6 { width: 58.333333333%; }
+
+
+#schedule {
+  border: #000 solid 1px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#schedule tr th {
+  background-color: rgb(190,33,70);
+  color: #FFF;
+}
+
+#schedule tr td,
+#schedule tr th {
+  border: #000 solid 1px;
+  padding: 5px;
+  width: 10%;
+}
+
+#schedule tr td {
+  vertical-align: top;
+}
+
+#schedule caption {
+  font-size: 30px;
+  color: rgb(190,33,70);
+}
+
+#moduleDetails {
+  padding: 10px;
+  border: 2px solid rgb(190,33,70);
+  border-radius: 5px;
+  min-width: 300px;
+}
+
+#moduleDetails tr th {
+  color: rgb(190,33,70);
+}
+
+#moduleDetails td,
+#moduleDetails th {
+  width: 50%;
+}
+
+#moduleDetails caption {
+  font-size: 18px;
+  color: rgb(190,33,70);
+}
+
+#related-modules {
+  margin-top: 15px;
+  border: 2px solid rgb(190,33,70);
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 16px;
+  width: 30%;
+}
+
+@media only screen and (max-width: 640px) {
+  #header > div {
+    display: block;
+  }
+
+  #related-modules {
+    width: 100%;
+  }
+}

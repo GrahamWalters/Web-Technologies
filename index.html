@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <link href='style.css' rel='stylesheet' />
+  <script src='jquery-1.11.0.min.js'></script>
+  <script src='script.js'></script>
+  <title>Timetable</title>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <div class="col7">
+        <img width="300px" src="uni-logo.jpg" alt="Napier Logo"><br />
+        <select id="schools"></select><br />
+        <select id="modules"></select>
+      </div>
+      <div class="col3">
+        <table id='moduleDetails'>
+          <caption>Module Details</caption>
+          <tr><th>Module Code</th><td id='moduleCode'></td></tr>
+          <tr><th>Module Name</th><td id='moduleName'></td></tr>
+          <tr><th>Module Leader</th><td id='moduleLeader'></td></tr>
+          <tr><th>Credit Value</th><td id='credit'></td></tr>
+          <tr><th>School</th><td id='school'></td></tr>
+        </table>
+      </div>
+      
+    </div>
+
+    <table id="schedule">
+      <caption>Schedule</caption>
+      <tr><th></th><th>09</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th></tr>
+      <tr><th>Mon</th><td id='mon09'></td><td id='mon10'></td><td id='mon11'></td><td id='mon12'></td><td id='mon13'></td><td id='mon14'></td><td id='mon15'></td><td id='mon16'></td><td id='mon17'></td></tr>
+      <tr><th>Tue</th><td id='tue09'></td><td id='tue10'></td><td id='tue11'></td><td id='tue12'></td><td id='tue13'></td><td id='tue14'></td><td id='tue15'></td><td id='tue16'></td><td id='tue17'></td></tr>
+      <tr><th>Wed</th><td id='wed09'></td><td id='wed10'></td><td id='wed11'></td><td id='wed12'></td><td id='wed13'></td><td id='wed14' class='long-hour'></td><td id='wed15'></td><td id='wed16'></td><td id='wed17'></td></tr>
+      <tr><th>Thu</th><td id='thu09'></td><td id='thu10'></td><td id='thu11'></td><td id='thu12'></td><td id='thu13'></td><td id='thu14'></td><td id='thu15'></td><td id='thu16'></td><td id='thu17'></td></tr>
+      <tr><th>Fri</th><td id='fri09'></td><td id='fri10'></td><td id='fri11'></td><td id='fri12'></td><td id='fri13'></td><td id='fri14'></td><td id='fri15'></td><td id='fri16'></td><td id='fri17'></td></tr>
+    </table>
+  </div>
+
+  <div id="related-modules"></div>
+</body>
+</html>
