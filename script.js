@@ -3,7 +3,7 @@ $(function() {
   var scheduleHTML = $('#schedule').html();
 
   $.getJSON(
-    'https://tracker.napier.ac.uk/timetable/cw.pl', {
+    'https://tracker.napier.ac.uk/timetable/data.pl', {
       'action':'list'
     }, function(l) {
 
@@ -18,7 +18,7 @@ $(function() {
 
   $('#schools').change(function(e) {
     $.getJSON(
-      'https://tracker.napier.ac.uk/timetable/cw.pl', {
+      'https://tracker.napier.ac.uk/timetable/data.pl', {
         'action':'list'
       }, function(l) {
 
@@ -27,9 +27,9 @@ $(function() {
         var modules = ['<option>Please Select a Module</option>'];
         if (school != null) {
           /*
-            loop thought the subject in the school. 
+            loop thought the subject in the school.
           */
-          
+
           for (var s in l.school[school].subjects) {
             for (var m in l.module[l.school[school].subjects[s]])
               modules.push('<option value="'+
@@ -44,8 +44,8 @@ $(function() {
         $('#modules').html(modules.join(''));
       }
     );
-  })
-  
+  });
+
 
 
   $('#modules').change(function() {
